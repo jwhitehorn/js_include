@@ -1,7 +1,10 @@
 module JsInclude
   module ViewHelpers
-    def js_include
-      #do it!
+    def js_include resource
+      unless @included_js_files.include? resource
+        @included_js_files << resource
+        javascript_include_tag resource
+      end
     end
   end
   
