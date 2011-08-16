@@ -5,7 +5,7 @@ module JsInclude
     end
   end
   
-  class Railtie < Rails::Railtetie
+  class Railtie < Rails::Railtie
     initializer "js_include.view_helpers" do
       ActionView::Base.send :include, ViewHelpers
     end
