@@ -8,4 +8,12 @@ The primary use case of _js_include_ is in partials. In the case where a partial
 
 # Usage
 
+To get started, you will need to include the _js_include_ gem in your project. Simply edit your `Gemfile` to include the line:
+
+`gem "js_include", "~> 0.9.5"`
+
+Once completed, do not forget to run `bundle install`, and you are off to the races.
+
+From your views you can now use `js_include` wherever you previously have used `javascript_include_tag`.
+
 `<%= js_include 'jquery' %>`
